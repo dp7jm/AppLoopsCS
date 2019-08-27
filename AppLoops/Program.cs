@@ -6,20 +6,30 @@ using System.Threading.Tasks;
 
 namespace AppLoops
 {
+    class NumberValidation
+    {
+        public string Validate(int number)
+        {
+            int chosenNumber = number;
+            if (chosenNumber == 7)
+            {
+                return "Valid";
+            }
+            else
+            {
+                return "Invalid";
+            }
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
             int chosenNumber = Int32.Parse(Console.ReadLine());
-            Console.WriteLine(chosenNumber);
-            if (chosenNumber == 7)
-            {
-                Console.WriteLine("Valid");
-            }
-            else
-            {
-                Console.WriteLine("Invalid");
-            }
+
+            NumberValidation evalute = new NumberValidation();
+
+            
         }
     }
 }
