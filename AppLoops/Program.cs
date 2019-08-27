@@ -20,6 +20,11 @@ namespace AppLoops
                 return "Invalid";
             }
         }
+
+        //public static int EvaluateNumbers(int first, int second)
+        //{
+        //    return first > second ? first : second;
+        //}
     }
 
     
@@ -29,7 +34,8 @@ namespace AppLoops
         static void Main(string[] args)
         {
             Console.WriteLine(@"Please choose the number between 1 and 3 :
-1. The program that validates chosen number");
+1. The program that validates chosen number
+2. Chose a greater number from two inputted characters");
             
             int number = int.Parse(Console.ReadLine()); ;
             switch (number)
@@ -38,11 +44,12 @@ namespace AppLoops
                     First();
 
                 break;
-                
-            }
-            int chosenNumber = Int32.Parse(Console.ReadLine());
+                //case 2:
 
-            Console.WriteLine(NumberValidation.Validate(chosenNumber));
+                //break;
+
+            }
+            
 
 
 
@@ -55,5 +62,14 @@ namespace AppLoops
             Console.WriteLine(NumberValidation.Validate(chosenNumber));
 
         }
+        //static void Second()
+        //{
+        //    Console.WriteLine("Input first number");
+        //    int firstNumber = Int32.Parse(Console.ReadLine());
+        //    Console.WriteLine("Input second number");
+        //    int secondNumber = Int32.Parse(Console.ReadLine());
+        //    Console.WriteLine("Greater Number is " + NumberValidation.EvaluateNumbers(firstNumber, secondNumber));
+
+        //}
     }
 }
