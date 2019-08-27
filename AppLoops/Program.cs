@@ -21,10 +21,10 @@ namespace AppLoops
             }
         }
 
-        //public static int EvaluateNumbers(int first, int second)
-        //{
-        //    return first > second ? first : second;
-        //}
+        public static int EvaluateNumbers(int first, int second)
+        {
+            return first > second ? first : second;
+        }
     }
 
     
@@ -44,9 +44,10 @@ namespace AppLoops
                     First();
 
                 break;
-                //case 2:
+                case 2:
+                    Second();
 
-                //break;
+                break;
 
             }
             
@@ -62,14 +63,14 @@ namespace AppLoops
             Console.WriteLine(NumberValidation.Validate(chosenNumber));
 
         }
-        //static void Second()
-        //{
-        //    Console.WriteLine("Input first number");
-        //    int firstNumber = Int32.Parse(Console.ReadLine());
-        //    Console.WriteLine("Input second number");
-        //    int secondNumber = Int32.Parse(Console.ReadLine());
-        //    Console.WriteLine("Greater Number is " + NumberValidation.EvaluateNumbers(firstNumber, secondNumber));
+        static void Second()
+        {
+            Console.WriteLine("Input first number");
+            int firstNumber = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Input second number");
+            int secondNumber = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Greater Number is " + NumberValidation.EvaluateNumbers(firstNumber, secondNumber));
 
-        //}
+        }
     }
 }
