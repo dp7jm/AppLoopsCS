@@ -6,35 +6,12 @@ using System.Threading.Tasks;
 
 namespace AppLoops
 {
-    class NumberValidation
-    {
-        public static string Validate(int number)
-        {
-            int chosenNumber = number;
-            if (chosenNumber == 7)
-            {
-                return "Valid";
-            }
-            else
-            {
-                return "Invalid";
-            }
-        }
-
-        public static int EvaluateNumbers(int first, int second)
-        {
-            return first > second ? first : second;
-        }
-    }
-
-    
-
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine(@"Please choose the number between 1 and 3 :
-1. The program that validates chosen number
+1. The program that validates, chosen number
 2. Chose a greater number from two inputted characters");
             
             int number = int.Parse(Console.ReadLine()); ;
