@@ -4,15 +4,8 @@
     {
         public static string Validate(int number)
         {
-            int chosenNumber = number;
-            if (chosenNumber == 7)
-            {
-                return "Valid";
-            }
-            else
-            {
-                return "Invalid";
-            }
+
+            return (number == 9) ? "Valid" : "Invalid";
         }
 
         public static int EvaluateNumbers(int first, int second)
