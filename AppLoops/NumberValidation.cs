@@ -23,12 +23,11 @@ namespace AppLoops
 
         public static string SpeedLimitTest(int speedLimit, int carSpeed)
         {
-            int speedDemerit = speedLimit - carSpeed;
+            int speedDemerit = carSpeed -speedLimit;
             if (speedDemerit <= 0)
             {
                 return "Ok";
             }
-
             return speedDemerit < 60 ? $"Your demerit points: {speedDemerit / 5}" : "License suspended";
         }
     }
