@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace AppLoops
 {
-    class NumberValidation
+    public class NumberValidation
     {
         public static string Validate(int number)
         {
@@ -24,18 +24,12 @@ namespace AppLoops
         public static string SpeedLimitTest(int speedLimit, int carSpeed)
         {
             int speedDemerit = speedLimit - carSpeed;
-            if (speedDemerit < 0)
+            if (speedDemerit <= 0)
             {
                 return "Ok";
             }
-            else if (speedDemerit < 60)
-            {
-                return $"Your demerit points: {speedDemerit / 5}";
-            }
-            else
-            {
-                return "License suspended";
-            }
+
+            return speedDemerit < 60 ? $"Your demerit points: {speedDemerit / 5}" : "License suspended";
         }
     }
 }

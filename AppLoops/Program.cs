@@ -15,24 +15,27 @@ namespace AppLoops
 1. The program that validates, chosen number
 2. Chose a greater number from two inputted characters
 3. Image landscape checker");
-            
+
             int number = int.Parse(Console.ReadLine()); ;
             switch (number)
             {
                 case 1:
                     First();
 
-                break;
+                    break;
                 case 2:
                     Second();
 
-                break;
+                    break;
                 case 3:
                     Third();
                     break;
+                case 4:
+                    Four();
+                    break;
 
             }
-            
+
 
 
 
@@ -63,6 +66,15 @@ namespace AppLoops
             var width = int.Parse(Console.ReadLine());
             Console.WriteLine(NumberValidation.LandscapePosition(height, width));
 
+        }
+
+        static void Four()
+        {
+            Console.WriteLine("Enter speed Limit");
+            int speedLimit = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter car speed");
+            int carSpeed = int.Parse(Console.ReadLine());
+            Console.WriteLine(NumberValidation.SpeedLimitTest(speedLimit, carSpeed));
         }
     }
 }
