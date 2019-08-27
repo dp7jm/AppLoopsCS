@@ -14,7 +14,8 @@ namespace AppLoops
             Console.WriteLine(@"Please choose the number between 1 and 3 :
 1. The program that validates, chosen number
 2. Chose a greater number from two inputted characters
-3. Image landscape checker");
+3. Image landscape checker
+4. Speed limit test");
 
             int number = int.Parse(Console.ReadLine()); ;
             switch (number)
@@ -64,6 +65,7 @@ namespace AppLoops
             var height = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter image width");
             var width = int.Parse(Console.ReadLine());
+
             Console.WriteLine(NumberValidation.LandscapePosition(height, width));
 
         }
