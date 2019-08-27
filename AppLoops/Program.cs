@@ -13,7 +13,8 @@ namespace AppLoops
         {
             Console.WriteLine(@"Please choose the number between 1 and 3 :
 1. The program that validates, chosen number
-2. Chose a greater number from two inputted characters");
+2. Chose a greater number from two inputted characters
+3. Image landscape checker");
             
             int number = int.Parse(Console.ReadLine()); ;
             switch (number)
@@ -26,6 +27,9 @@ namespace AppLoops
                     Second();
 
                 break;
+                case 3:
+                    Third();
+                    break;
 
             }
             
