@@ -8,7 +8,7 @@ namespace AppLoops
 {
     class NumberValidation
     {
-        public string Validate(int number)
+        public static string Validate(int number)
         {
             int chosenNumber = number;
             if (chosenNumber == 7)
@@ -27,9 +27,10 @@ namespace AppLoops
         {
             int chosenNumber = Int32.Parse(Console.ReadLine());
 
-            NumberValidation evalute = new NumberValidation();
+            Console.WriteLine(NumberValidation.Validate(chosenNumber));
 
-            
+
+
         }
     }
 }
