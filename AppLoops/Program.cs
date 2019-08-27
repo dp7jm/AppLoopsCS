@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -47,6 +48,16 @@ namespace AppLoops
             Console.WriteLine("Input second number");
             int secondNumber = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Greater Number is " + NumberValidation.EvaluateNumbers(firstNumber, secondNumber));
+
+        }
+
+        static void Third()
+        {
+            Console.WriteLine("Enter image height");
+            var height = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter image width");
+            var width = int.Parse(Console.ReadLine());
+            Console.WriteLine(NumberValidation.LandscapePosition(height, width));
 
         }
     }

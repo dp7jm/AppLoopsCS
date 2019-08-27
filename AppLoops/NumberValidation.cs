@@ -1,4 +1,7 @@
-﻿namespace AppLoops
+﻿using System.Net.NetworkInformation;
+using System.Runtime.InteropServices;
+
+namespace AppLoops
 {
     class NumberValidation
     {
@@ -11,6 +14,11 @@
         public static int EvaluateNumbers(int first, int second)
         {
             return first > second ? first : second;
+        }
+
+        public static string LandscapePosition(int height, int width)
+        {
+            return height > width ? "Vertical" : "Horizontal";
         }
     }
 }
