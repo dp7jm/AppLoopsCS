@@ -12,7 +12,14 @@ namespace AppLoops
         {
             int chosenNumber = Int32.Parse(Console.ReadLine());
             Console.WriteLine(chosenNumber);
-
+            if (chosenNumber == 7)
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
         }
     }
 }
